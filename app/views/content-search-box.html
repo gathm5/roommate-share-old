@@ -1,0 +1,28 @@
+<div class="search-box-contents" data-ui-keypress="{'enter':'search.place()'}">
+    <div class="search-field">
+        <input type="text" class="search-text" data-google-auto-complete data-ng-model="search.text"/>
+    </div>
+    <div class="button-group">
+        <div class="button">
+            <button class="search-house" data-ng-click="search.place()">
+                <span>
+                    Apartments
+                </span>
+            </button>
+        </div>
+        <div class="button">
+            <button class="search-neighbor" data-ng-click="search.neighbor()">
+                <span>
+                    Neighbors
+                </span>
+            </button>
+        </div>
+        <div class="button">
+            <button class="search-service" data-ng-click="search.services()">
+                <span>
+                    Services
+                </span>
+            </button>
+        </div>
+    </div>
+</div>

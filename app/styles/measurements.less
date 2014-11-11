@@ -1,0 +1,113 @@
+//Units
+@small: 1em;
+@normal: 1em;
+
+//Box Sizing
+@width-full: 100%;
+@height-full: 100%;
+@height-half: 50%;
+@width-half: 50%;
+@width-third: 33.33%;
+@height-third: 33.33%;
+
+//Font Size
+@font-normal: 1em;
+@font-small: 0.9em;
+@font-smaller: 0.8em;
+@font-tiny: 0.7em;
+@font-big: 1.1em;
+@font-bigger: 1.2em;
+@font-large: 1.3em;
+@font-larger: 1.4em;
+
+//Font Weights
+@weight-normal: 300;
+@weight-bold: 600;
+@weight-bolder: 700;
+
+//Padding & Margin
+.padding-0() {
+    padding: 0px;
+}
+
+.padding-tiny() {
+    padding: 3px;
+}
+
+.padding-smaller() {
+    padding: 5px;
+}
+
+.padding-small() {
+    padding: 7.5px;
+}
+
+.padding-normal() {
+    padding: 10px;
+}
+
+.padding-large() {
+    padding: 12.5px;
+}
+
+.padding-larger() {
+    padding: 15px;
+}
+
+.padding-heavy() {
+    padding: 20px;
+}
+
+.padding-heavier() {
+    padding: 30px;
+}
+
+.margin-0() {
+    margin: 0px;
+}
+
+.margin-tiny() {
+    margin: 3px;
+}
+
+.margin-smaller() {
+    margin: 5px;
+}
+
+.margin-small() {
+    margin: 7.5px;
+}
+
+.margin-normal() {
+    margin: 10px;
+}
+
+.margin-large() {
+    margin: 12.5px;
+}
+
+.margin-larger() {
+    margin: 15px;
+}
+
+.margin-heavy() {
+    margin: 20px;
+}
+
+.margin-heavier() {
+    margin: 30px;
+}
+
+//Padding & Margin Processor
+.margin-horizontal(@size) {
+    margin: 0 @size;
+}
+.margin-vertical(@size) {
+    margin: @size 0;
+}
+.padding-horizontal(@size) {
+    padding: 0 @size;
+}
+.padding-vertical(@size) {
+    padding: @size 0;
+}

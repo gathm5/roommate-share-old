@@ -1,0 +1,27 @@
+<div class="search-filter-box">
+    <div class="search-filter property-filter">
+        <div class="title">Property filter</div>
+        <div class="filter-components">
+            <div class="price">
+                <div class="min">
+                    <input type="range" name="min" min="{{filter.property.price.min.low}}"
+                           max="{{filter.property.price.min.high}}" data-ng-model="filter.property.price.min.model"
+                           value="{{filter.property.price.default}}" step="{{filter.property.price.step}}"/>
+                    <span>{{filter.property.price.min.model}}</span>
+                </div>
+                <div class="max">
+                    <input type="range" name="min" min="{{filter.property.price.max.low}}"
+                           max="{{filter.property.price.max.high}}" data-ng-model="filter.property.price.max.model"
+                           value="{{filter.property.price.default}}" step="{{filter.property.price.step}}"/>
+                    <span>{{filter.property.price.max.model}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-filter icons-filter">
+        <div class="title">Displayed Icons</div>
+    </div>
+    <div class="search-filter action-filter">
+        Mail
+    </div>
+</div>

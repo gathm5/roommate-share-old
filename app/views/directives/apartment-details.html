@@ -1,0 +1,16 @@
+<div class="apartment-details">
+    <div class="apartment-details-image" data-ng-if="apartmentDetails.image">
+        <img ng-src="{{apartmentDetails.image}}" alt="{{apartmentDetails.title}}"/>
+    </div>
+    <div class="apartment-details-content">
+        <div class="bedroom" data-ng-if="apartmentDetails.bedroom">
+            {{apartmentDetails.bedroom}} bedrooms
+        </div>
+        <div class="bathroom" data-ng-if="apartmentDetails.bathroom">
+            {{apartmentDetails.bathroom}} bathrooms
+        </div>
+        <div class="description" data-ng-if="apartmentDetails.description">
+            {{apartmentDetails.description}}
+        </div>
+    </div>
+</div>

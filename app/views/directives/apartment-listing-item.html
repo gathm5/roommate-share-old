@@ -1,0 +1,35 @@
+<div class="apartment-item">
+    <div class="apartment-image inline" data-ng-if="apartment.image">
+        <img ng-src="{{apartment.image}}" alt="{{apartment.title}}"/>
+    </div>
+    <div class="inline">
+        <div class="apartment-description inline">
+            <div class="apartment-description-title">
+                {{apartment.title}}
+            </div>
+            <div class="apartment-location">
+                {{apartment.location}}
+            </div>
+            <div class="apartment-description-rooms">
+                <span data-ng-if="apartment.bedroom">
+                    {{apartment.bedroom}} bedrooms
+                </span>
+                <span data-ng-if="apartment.bathroom">
+                    {{apartment.bathroom}} bathrooms
+                </span>
+
+            </div>
+        </div>
+        <div class="apartment-rent inline">
+            {{apartment.rent}}
+        </div>
+        <div>
+            <button>
+                <span>Contact</span>
+            </button>
+            <button data-ng-click="details(apartment.id)">
+                <span>Details</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="result-container">
+    <div class="result-category" data-ui-view="ResultCategory"></div>
+    <ul class="apartment-listings" data-ng-if="search.apartments">
+        <li data-ng-repeat="apartment in search.apartments">
+            <apartment data-apartment="apartment"></apartment>
+        </li>
+    </ul>
+    <div class="apartment-details-block"
+         data-ng-class="{'active': $state.is('init.search.apartments.details')}"
+         data-ui-view="ApartmentDetail"></div>
+</div>

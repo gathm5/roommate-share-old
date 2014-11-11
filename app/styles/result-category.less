@@ -1,0 +1,30 @@
+.result-category {
+  .apartment-search-category {
+    .button-group {
+      .padding-small();
+      width: @width-full;
+      .button {
+        width: @width-half;
+        padding: 0 5px;
+        &:first-child {
+          padding: 0 2.5px;
+          padding-left: 0;
+        }
+        &:last-child {
+          padding: 0 2.5px;
+          padding-right: 0;
+        }
+        float: left;
+        button {
+          width: @width-full;
+          span {
+
+          }
+        }
+      }
+      &:after {
+        .clear-both();
+      }
+    }
+  }
+}

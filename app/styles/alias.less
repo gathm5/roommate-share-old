@@ -1,0 +1,41 @@
+.static {
+  position: relative;
+}
+
+.non-static {
+  position: absolute;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.transparent-white() {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.pure-white() {
+  background: rgba(255, 255, 255, 1);
+}
+
+.transparent-black() {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.pure-black() {
+  background: rgba(0, 0, 0, 1);
+}
+
+.overflow-only-y() {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.shadow-right-only() {
+  .vendor-box-shadow(3px 0 3px rgba(0, 0, 0, 0.2));
+}
+
+.shadow-top-only() {
+  .vendor-box-shadow(0px -3px 3px rgba(0, 0, 0, 0.1));
+}

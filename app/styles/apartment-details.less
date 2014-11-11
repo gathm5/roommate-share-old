@@ -1,0 +1,44 @@
+.apartment-details-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: @width-full;
+  height: @height-full;
+  .overflow-only-y();
+  .shadow-right-only();
+  margin-right: -103%;
+  .transparent-white();
+  display: none;
+  &.active {
+    display: block;
+  }
+  .apartment-details-header {
+    background: none repeat scroll 0 0 dodgerblue;
+    color: @color-white;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 90px;
+    position: absolute;
+    right: -45px;
+    text-align: center;
+    top: -45px;
+    .vendor-transform(rotate(45deg));
+    width: 90px;
+    span {
+      position: absolute;
+      width: @width-full;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .apartment-details {
+    .apartment-details-image {
+      img {
+        width: @width-full;
+      }
+    }
+    .apartment-details-content {
+      .padding-normal();
+    }
+  }
+}
