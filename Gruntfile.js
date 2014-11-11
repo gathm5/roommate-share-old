@@ -300,6 +300,19 @@ module.exports = function (grunt) {
             }
         },
 
+        ftpush: {
+            build: {
+                auth: {
+                    host: 'www.xpenzo.com',
+                    port: 21,
+                    authKey: 'key'
+                },
+                src: '<%= yeoman.dist %>',
+                dest: '/haldicurry.com/',
+                exclusions: ['dist/tmp']
+            }
+        },
+
         // Run some tasks in parallel to speed up the build process
         concurrent: {
             server: [
